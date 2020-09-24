@@ -1,0 +1,18 @@
+{
+  "name": "dsc-server",
+  "version": "1.0.0",
+  "description": "DSC Adgitm server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DSC ADGITM",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^3.4.1",
+    "fastify-cors": "^4.1.0",
+    "firebase": "^7.21.0",
+    "firebase-admin": "^9.2.0"
+  }
+}
