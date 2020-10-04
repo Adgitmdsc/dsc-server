@@ -6,22 +6,14 @@
     - collection : `certificates`
     - doc id : generated via script
     - fields stored :
-        - name : string
-        - data_issued : string
-        - event_name : string 
-        - on : string (duration of event)
-        - o_one : string (img of primary orgranizer)
-        - o_two : string (img of secondary origranizer)
+        - one := string : heading of the certificate
+        - two := string : name of the person
+        - three : string : about the whole event or about the certificate
+        - four : string : url to second 
 
-- `/certificate/sample` : returns : (in string format, please use JSON.parse() to get the object )
+- `/certificate/sample` : returns : 
+```
+{"one":"this is to certify","two":"DSC ADGITM","three":"on successfully completing the project of creating it's own ccertificate portal","four":"https://firebasestorage.googleapis.com/v0/b/dsc-adgitm.appspot.com/o/dq_logo.png?alt=media&token=08315e12-7334-44d2-aae9-1d034abd71d6"}
+```
 
-```
-{
-    "o_two": "https://github.com/Adgitmdsc/dsc-adgitm-website/blob/master/src/assets/DQ.png",
-    "event_name": "development certificate",
-    "on": "22/09/20 -> 22/09/20",
-    "o_one": "https://github.com/Adgitmdsc/dsc-adgitm-website/blob/master/src/assets/dsc_logo_v.png",
-    "data_issued": "22/09/2020",
-    "name": "DSC ADGITM"
-}
-```
+
